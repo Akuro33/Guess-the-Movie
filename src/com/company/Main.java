@@ -11,10 +11,11 @@ public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner sc = new Scanner(System.in);
         RandomMovie movie = new RandomMovie();
-        String gmovie = "nona";
+       // String gmovie = "nona";
+        String gmovie = movie.RandomMovies();
 
 
-       // System.out.println(gmovie); //Tester do Losowania
+        System.out.println(gmovie); //Tester do Losowania
         gmovie = gmovie.toLowerCase();
         String hided = gmovie.replaceAll("[a-z]", "_");
         StringBuilder Hiden = new StringBuilder(hided);

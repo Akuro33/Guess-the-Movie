@@ -6,40 +6,14 @@ import java.util.Scanner;
 
 
 public class Main {
-  /*  public void randommovie() throws FileNotFoundException {
-        File file = new File("Movies.txt");
-        Scanner sc = new Scanner(System.in);
-        Scanner scanner = new Scanner(file);
-        //Losowy Film z Listy, jako iż nie
-        int random = (int) (Math.random() * 20);
-        String gmovie = "nona";
-        //System.out.println(random);
-        for (int i = 0; i <= random;  i++) {
-            String movies = scanner.nextLine();
-            if (i == random) {
-                gmovie = movies;
-                break;
-            }
-        }
-    }
-*/
 
 
     public static void main(String[] args) throws FileNotFoundException {
-       File file = new File("Movies.txt");
         Scanner sc = new Scanner(System.in);
-        Scanner scanner = new Scanner(file);
-       //Losowy Film z Listy, jako iż nie
-        int random = (int) (Math.random() * 20);
+        RandomMovie movie = new RandomMovie();
         String gmovie = "nona";
-         //System.out.println(random);
-       for (int i = 0; i <= random;  i++) {
-            String movies = scanner.nextLine();
-            if (i == random) {
-                gmovie = movies;
-                break;
-            }
-        }
+
+
        // System.out.println(gmovie); //Tester do Losowania
         gmovie = gmovie.toLowerCase();
         String hided = gmovie.replaceAll("[a-z]", "_");
